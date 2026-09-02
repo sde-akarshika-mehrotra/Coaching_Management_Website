@@ -7,6 +7,8 @@ const Navbar = () => {
     <>
       {/* LOGO */}
       <div className="w-full h-20 flex items-center px-26 bg-black/90 backdrop-blur-md text-white sticky top-0 z-50">
+
+
         <div className="relative w-14 h-14 rounded-full bg-white border-2 border-black flex items-center justify-center">
           <span className="text-black font-bold text-lg z-10">BSG</span>
 
@@ -30,9 +32,18 @@ const Navbar = () => {
           </button>
 
           {showCourses && (
-            <div className="absolute top-16 left-0 w-[1000px] bg-white text-black rounded-b-2xl shadow-2xl z-50 flex overflow-hidden">
+            <div
+              className="
+      absolute top-16 left-0
+      w-[min(1100px,calc(100vw-20px))]
+      max-h-[calc(100vh-80px)]
+      bg-white text-black
+      rounded-b-2xl shadow-2xl
+      z-50 flex overflow-hidden
+    "
+            >
               {/* LEFT SECTION */}
-              <div className="w-[35%] border-r border-gray-200">
+              <div className="w-[35%] shrink-0 border-r border-gray-200 overflow-y-auto">
                 <div className="px-6 py-5 bg-gray-50">
                   <h3 className="font-bold text-lg">Class 1</h3>
                   <p className="text-sm text-gray-500 mt-2">
@@ -43,8 +54,7 @@ const Navbar = () => {
                 <div className="px-6 py-5">
                   <h3 className="font-bold text-lg">Class 2</h3>
                   <p className="text-sm text-gray-500 mt-2">
-                    {" "}
-                    State Board, CBSE, ICSE, ISC{" "}
+                    State Board, CBSE, ICSE, ISC
                   </p>
                 </div>
 
@@ -93,7 +103,7 @@ const Navbar = () => {
                 <div className="px-6 py-5">
                   <h3 className="font-bold text-lg">Class 9</h3>
                   <p className="text-sm text-gray-500 mt-2">
-                    State Board, CBSE, ICSE, ISC{" "}
+                    State Board, CBSE, ICSE, ISC
                   </p>
                 </div>
 
@@ -120,89 +130,111 @@ const Navbar = () => {
               </div>
 
               {/* RIGHT SECTION */}
-              <div className="w-[65%] p-7">
-                <div className="grid grid-cols-3 gap-5">
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">🎓</span>
-                    <span className="font-semibold text-lg">9th Maths</span>
+              <div className="flex-1 min-w-0 p-7 overflow-y-auto">
+                <div className="grid grid-cols-3 gap-5 min-w-0">
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📐</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      9th Mathematics
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">🎓</span>
-                    <span className="font-semibold text-lg">9th PCM</span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📚</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      9th PCM
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">⚙️</span>
-                    <span className="font-semibold text-lg">
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">⚙️</span>
+                    <span className="font-semibold text-lg min-w-0 break-words">
                       9th Only Physics, Chemistry
                     </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">⚖️</span>
-                    <span className="font-semibold text-lg">9th English</span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📖</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      9th English
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">⚖️</span>
-                    <span className="font-semibold text-lg">
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📏</span>
+                    <span className="font-semibold text-lg min-w-0 break-words">
                       10th Mathematics
                     </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">🎓</span>
-                    <span className="font-semibold text-lg">10th Science</span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">🔬</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      10th Science
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">🏛️</span>
-                    <span className="font-semibold text-lg">10th English</span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📘</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      10th English
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">👨‍🎓</span>
-                    <span className="font-semibold text-lg">
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📐</span>
+                    <span className="font-semibold text-lg min-w-0 break-words">
                       11th Mathematics
                     </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">📐</span>
-                    <span className="font-semibold text-lg">11th Biology</span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">🧬</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      11th Biology
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">💊</span>
-                    <span className="font-semibold text-lg">11th PCM </span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📚</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      11th PCM
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">💊</span>
-                    <span className="font-semibold text-lg">11th PCB</span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📚</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      11th PCB
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">💊</span>
-                    <span className="font-semibold text-lg">12th Biology</span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">🧫</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      12th Biology
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">💊</span>
-                    <span className="font-semibold text-lg">
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📏</span>
+                    <span className="font-semibold text-lg min-w-0 break-words">
                       12th Mathematics
                     </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">💊</span>
-                    <span className="font-semibold text-lg">12th PCM </span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📚</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      12th PCM
+                    </span>
                   </div>
 
-                  <div className="h-24 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
-                    <span className="text-3xl mr-4">💊</span>
-                    <span className="font-semibold text-lg">12th PCB</span>
+                  <div className="h-24 min-w-0 border rounded-xl flex items-center px-6 hover:shadow-md cursor-pointer">
+                    <span className="text-3xl mr-4 shrink-0">📚</span>
+                    <span className="font-semibold text-lg min-w-0">
+                      12th PCB
+                    </span>
                   </div>
                 </div>
               </div>
@@ -212,14 +244,15 @@ const Navbar = () => {
 
         {/* LINKS */}
         <ul className="flex items-center gap-10 ml-8">
-          <li className="text-base font-medium cursor-pointer ">HOME</li>
-          <li className="text-base font-medium cursor-pointer">ABOUT</li>
+
           <li className="text-base font-medium cursor-pointer">ADMISSION</li>
           <li className="text-base font-medium cursor-pointer">FEE DEPOSIT</li>
-          <li className="text-base font-medium cursor-pointer">LOCATION</li>
           <li className="text-base font-medium cursor-pointer">
             FREE STUDY MATERIAL
           </li>
+           <li className="text-base font-medium cursor-pointer">STAFF</li>
+          <li className="text-base font-medium cursor-pointer">LOCATION</li>
+          
         </ul>
 
         {/* LOGIN */}

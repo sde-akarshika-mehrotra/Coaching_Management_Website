@@ -55,6 +55,7 @@ const Home = () => {
             ></div>
 
             {/* Student Image */}
+
             <div className="absolute inset-8 rounded-full overflow-hidden">
               <img
                 src={student}
@@ -105,6 +106,7 @@ const Home = () => {
           </div>
 
           {/* ================= TEACHER CIRCLE - BOTTOM LEFT ================= */}
+          
           <div className="absolute bottom-8 left-10 w-[300px] h-[300px]">
             {/* Soft inner background */}
             <div className="absolute inset-5 rounded-full bg-[#f0efff]"></div>

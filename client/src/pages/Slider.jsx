@@ -44,6 +44,7 @@ function Slider() {
     <section className="relative w-full overflow-hidden">
 
       {/* Slides */}
+      
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{

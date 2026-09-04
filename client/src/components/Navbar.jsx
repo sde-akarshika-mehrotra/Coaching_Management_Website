@@ -16,6 +16,7 @@ const Navbar = () => {
         </div>
 
         {/* COURSES/POP-UP */}
+        
         <div className="relative ml-10">
           <button
             onClick={() => setShowCourses(!showCourses)}

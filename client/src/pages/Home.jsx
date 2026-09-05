@@ -4,6 +4,7 @@ import teacher from "../assets/teacher.jpg";
 import Slider from "./Slider";
 
 const Home = () => {
+
   return (
     <>
      <div className="w-full">
@@ -176,6 +177,7 @@ const Home = () => {
     "
           >
             Nilay Sir, What is BSG?
+            
             {/* Bubble arrow */}
             <div
               className="

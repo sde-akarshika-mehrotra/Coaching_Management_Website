@@ -2,6 +2,7 @@ import React from "react";
 import student from "../assets/student.jpg";
 import teacher from "../assets/teacher.jpg";
 import Slider from "./Slider";
+import Features from "./Features";
 
 const Home = () => {
 
@@ -226,6 +227,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Features/>
       </div>
     </>
   );
